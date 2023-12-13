@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Gotham";
+  src: url("../src/fonts/gotham-light.woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../src/fonts/gotham-book.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../src/fonts/gotham-bold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../src/fonts/gotham-black.woff2");
+  font-weight: 800;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Gotham";
+}
+
+.grid-pattern {
+  display: grid;
+  grid-template: auto/1fr 1200px 1fr;
+}
+
+section {
+  grid-column: 2;
+  padding: 100px 0px;
+}
